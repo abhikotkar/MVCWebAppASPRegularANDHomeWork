@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "AcceptFood";
+}
+
+<h1>Accept Food</h1>
+
+@using(Html.BeginForm())
+{
+<table class="table">
+    <tr>
+        <td>Enter Name</td>
+        <td>@Html.TextBox("name")</td>
+    </tr>
+    <tr>
+        <td>Enter Mobile No</td>
+        <td>@Html.TextBox("mobile")</td>
+    </tr>
+    <tr>
+        <td>South Indian Food</td>
+        <td>
+            <input type="checkbox" name="south" value="ChickenChettinad" />Chicken Chettinad&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="south" value="ChickenCurry" />Chicken Curry&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="south" value="MasalaDosa" />Masala Dosa&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="south" value="HyderabadiBiryani" />Hyderabadi Biryani&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="south" value="PaalPayasam" />Paal Payasam
+        </td>
+    </tr>
+    <tr>
+        <td>North Indian Food</td>
+        <td>
+            <input type="checkbox" name="north" value="CholeBhature" />Chole Bhature&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="north" value="RoganJosh" />Rogan Josh&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="north" value="StuffedBati" />Stuffed Bati&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="north" value="ChickenDumBiryani" />Chicken Dum Biryani&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="north" value="AlooSamosa" />Aloo Samosa
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" value="Submit" class="btn btn-outline-primary" /></td>
+    </tr>
+</table>
+}

@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+    <h1>Login</h1>
+    <p>
+        @Html.ActionLink("Register", "Registration", "User")
+    </p>
+    @using (Html.BeginForm())
+    {
+        <table class="table table-bordered text-center">
+            <tr>
+                <td>Enter mobile no</td>
+            </tr>
+            <tr>
+                <td>@Html.TextBox("username")</td>
+            </tr>
+            <tr>
+                <td>Enter password</td>
+            </tr>
+            <tr>
+                <td>@Html.TextBox("pass")</td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login" class="btn btn-outline-primary" /></td>
+            </tr>
+        </table>
+    }
+
+

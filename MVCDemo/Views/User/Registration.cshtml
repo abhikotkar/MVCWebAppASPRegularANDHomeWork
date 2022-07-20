@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Registration";
+}
+
+<h1>User Registration</h1>
+<p>
+    @Html.ActionLink("Login", "Login", "User")
+</p>
+
+@using (Html.BeginForm())
+{
+    <table class="table">
+        <tr>
+            <td>Enter name</td>
+            <td>@Html.TextBox("username")</td>
+        </tr>
+        <tr>
+            <td>Select Gender</td>
+            <td>
+                @Html.RadioButton("gender", "male")Male
+                @Html.RadioButton("gender", "female")Female
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Mobile No.</td>
+            <td>
+                <input type="text" name="mobile" />
+            </td>
+        </tr>
+        <tr>
+            <td>Create Strong Password</td>
+            <td>@Html.TextBox("pass")</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Register" class="btn btn-primary" /></td>
+        </tr>
+    </table>
+}
